@@ -57,7 +57,7 @@ public class EchallanLogin extends AppCompatActivity {
         txtUsername = (EditText) findViewById(R.id.editText);
         txtPassword = (EditText) findViewById(R.id.editText2);
 
-        //TODO local commit for testintg
+        //TODO local commit for testintg lkjlkjklj
 
 //        Toast.makeText(getApplicationContext(), "Sergeant Login Status: " + session.isLoggedIn(), Toast.LENGTH_LONG).show();
 
