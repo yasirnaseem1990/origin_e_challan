@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <CheckBox
+        android:id="@+id/checkb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.025"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView1993"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="SelectAll"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="@+id/textView43"
+        app:layout_constraintTop_toTopOf="@+id/checkb"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/checkb"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkb" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="52dp"
+        android:text="@string/eTicket"
+        android:textColor="@color/Sumarycolor"
+        app:layout_constraintBottom_toTopOf="@+id/textView45"
+        app:layout_constraintStart_toEndOf="@+id/checkBox" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/challandate"
+        android:textColor="@color/Sumarycolor"
+
+        app:layout_constraintEnd_toEndOf="@+id/textView42"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="@+id/textView42"
+        app:layout_constraintTop_toBottomOf="@+id/textView1993" />
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/violatorname"
+
+        android:textColor="@color/Sumarycolor"
+        app:layout_constraintEnd_toEndOf="@+id/textView43"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="@+id/textView43"
+        app:layout_constraintTop_toBottomOf="@+id/textView43" />
+
+    <TextView
+        android:id="@+id/textView56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/zone"
+        android:textColor="@color/Sumarycolor"
+
+        app:layout_constraintEnd_toEndOf="@+id/textView45"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView45"
+        app:layout_constraintTop_toBottomOf="@+id/textView45" />
+
+    <TextView
+        android:id="@+id/textView57"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/textView43"
+        app:layout_constraintStart_toEndOf="@+id/textView43"
+        android:textColor="@color/Sumarycolor"
+
+        app:layout_constraintTop_toTopOf="@+id/textView43"
+        app:layout_constraintVertical_bias="0.875" />
+
+
+    <TextView
+        android:id="@+id/textView58"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/Sumarycolor"
+
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/textView45"
+        app:layout_constraintStart_toStartOf="@+id/textView57"
+        app:layout_constraintTop_toBottomOf="@+id/textView43"
+        app:layout_constraintVertical_bias="0.875" />
+
+    <TextView
+        android:id="@+id/textView59"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+
+        android:textColor="@color/Sumarycolor"
+        app:layout_constraintBottom_toTopOf="@+id/textView56"
+        app:layout_constraintStart_toStartOf="@+id/textView57"
+        app:layout_constraintTop_toTopOf="@+id/textView45"
+        app:layout_constraintVertical_bias="0.875" />
+
+    <TextView
+        android:id="@+id/textView60"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textColor="@color/Sumarycolor"
+
+        app:layout_constraintBottom_toBottomOf="@+id/textView56"
+        app:layout_constraintStart_toStartOf="@+id/textView59"
+        app:layout_constraintTop_toTopOf="@+id/textView59"
+        app:layout_constraintVertical_bias="0.9" />
+
+
+</android.support.constraint.ConstraintLayout>

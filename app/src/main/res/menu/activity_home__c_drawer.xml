@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/generatechallan"
+            android:icon="@drawable/dochandoverrricon"
+            android:title="Generate Challan"
+            />
+        <item
+            android:id="@+id/violatorhistory"
+            android:icon="@drawable/violatorhistory"
+            android:title="Violator History" />
+        <item
+            android:id="@+id/todaysummary"
+            android:icon="@drawable/todaysummmaryicon"
+            android:title="Today's Summary" />
+        <item
+            android:id="@+id/doc_handover"
+            android:icon="@drawable/dochandoverrricon"
+            android:title="Document Handover" />
+        <item
+            android:id="@+id/pay"
+            android:icon="@drawable/paymentvericon"
+            android:title="Payment Verification" />
+        <item
+            android:id="@+id/nav_changepassw"
+            android:icon="@drawable/changepass"
+            android:title="Change Password" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+    </group>
+</menu>

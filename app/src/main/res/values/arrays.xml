@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="zoneList">
+        <item>--select--</item>
+        <item>Zone I</item>
+        <item>Zone II</item>
+        <item>Zone III</item>
+        <item>Zone IV</item>
+    </string-array>
+</resources>

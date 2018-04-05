@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.hassanmalik.echallan.sergeant.fragm.handOverToBranch">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:id="@+id/headerrelativeLayout">
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnhandrover_handoV_To_Branch"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/handoverbtn"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="@string/handovertobranch"
+            android:textColor="@color/black"
+            android:textSize="@dimen/header_txt_size"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/Grey"
+        android:id="@+id/view"
+        android:layout_below="@+id/headerrelativeLayout">
+    </View>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/bottomRelativeLayout"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:id="@+id/childrelativeLayout"
+        android:layout_below="@+id/view">
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Search for Violations "
+            android:paddingLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/spnnericon"
+            android:layout_below="@+id/selection_header_title"
+            android:id="@+id/spnZone"
+            />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/list_handover_To_B"
+            android:layout_below="@+id/spnZone">
+        </ListView>
+
+        </RelativeLayout>
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:id="@+id/bottomRelativeLayout"
+        android:paddingRight="10dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/cncl_handover_to_branch"
+            android:src="@drawable/cancelfooter" />
+
+
+            <ImageView
+                android:id="@+id/handoverbtn_handover_to_branch"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/handoverfooter" />
+
+
+    </RelativeLayout>
+    </RelativeLayout>

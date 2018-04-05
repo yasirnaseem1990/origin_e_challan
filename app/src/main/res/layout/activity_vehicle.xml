@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:id="@+id/headerrelativeLayout">
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_vehicle_information_submit"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/next"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="@string/violatorInfoheader"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/header_txt_size" />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/Grey"
+        android:id="@+id/view"
+        android:layout_below="@+id/headerrelativeLayout">
+    </View>
+
+    <RelativeLayout
+        android:id="@+id/relaative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_above="@+id/switch4"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="19dp"
+            android:background="@drawable/spnnericon">
+
+        </Spinner>
+
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="145dp"
+            android:text="Vehicle Registration"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <Switch
+            android:id="@+id/switch4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editText9"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:id="@+id/editText9"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView16"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/spinner"
+            android:ems="10"
+            android:hint="Enter Vehicle No"
+            android:inputType="number"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editText9"
+            android:layout_below="@+id/editText9"
+            android:layout_marginTop="17dp"
+            android:text="Impound"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <Switch
+            android:id="@+id/switch5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView17"
+            android:layout_alignBottom="@+id/textView17"
+            android:layout_alignStart="@+id/switch4" />
+
+        <TextView
+            android:id="@+id/textView70"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView17"
+            android:layout_below="@+id/switch5"
+            android:text="Select Document Type"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/switch5"
+            android:layout_below="@+id/textView70"
+            android:layout_marginTop="27dp"
+            android:orientation="horizontal">
+
+
+        </RadioGroup>
+
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView70"
+            android:layout_marginTop="14dp"
+            android:buttonTint="@color/colorPrimary"
+            android:checked="true"
+            android:text="Liescence"
+            android:textColor="@color/lightgrey"
+            android:textSize="10dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/radioButton6"
+            android:layout_alignBottom="@+id/radioButton6"
+            android:layout_marginStart="14dp"
+            android:layout_toEndOf="@+id/radioButton6"
+            android:buttonTint="@color/colorPrimary"
+            android:text="Route permit"
+            android:textColor="@color/lightgrey"
+            android:textSize="10dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/radioButton7"
+            android:layout_alignBottom="@+id/radioButton7"
+            android:layout_marginStart="14dp"
+            android:layout_toEndOf="@+id/radioButton7"
+            android:buttonTint="@color/colorPrimary"
+            android:text="Registration Book"
+            android:textColor="@color/lightgrey"
+            android:textSize="10dp" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/radioButton6"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/spnnericon" />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_alignParentBottom="true"
+        >
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/cncllbtn_vehicle_info_submit"
+            android:src="@drawable/cancelfooter" />
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/nxtBtn_vehicle_info_submit"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/nextfoter" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
