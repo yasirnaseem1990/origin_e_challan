@@ -1,40 +1,32 @@
 package com.example.hassanmalik.echallan.sergeant.Activities;
-
 import android.app.Dialog;
+import android.app.FragmentTransaction;
 import android.content.Context;
-import android.content.DialogInterface;
-import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AlertDialog;
-import android.text.TextUtils;
-import android.util.Log;
-import android.view.Gravity;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.TextUtils;
+import android.util.Log;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.WindowManager;
+import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.amitshekhar.DebugDB;
 import com.example.hassanmalik.echallan.R;
-import com.example.hassanmalik.echallan.sergeant.Activities.Violatorinformation;
 import com.example.hassanmalik.echallan.sergeant.Utils.AppConstants;
 import com.example.hassanmalik.echallan.sergeant.Utils.DataHandler;
+import com.example.hassanmalik.echallan.sergeant.fragm.paymentVerification;
+import com.example.hassanmalik.echallan.sergeant.fragm.welcomeToEchallan;
 
 public class HomeChallan extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, AdapterView.OnItemSelectedListener {
@@ -62,7 +54,7 @@ public class HomeChallan extends AppCompatActivity
 //                Intent i = new Intent(getApplicationContext(), Violatorinformation.class);
 //                startActivity(i);
                 Violatorinformation fragment = new Violatorinformation();
-                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                android.support.v4.app.FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
                 transaction.replace(R.id.frame2, fragment);
                 transaction.commit();
             }
@@ -73,6 +65,7 @@ public class HomeChallan extends AppCompatActivity
             @Override
             public void onClick(View v) {
 
+
             }
         });
 
@@ -81,14 +74,10 @@ public class HomeChallan extends AppCompatActivity
             @Override
             public void onClick(View v) {
 
-                android.app.FragmentManager fragmentManager = getFragmentManager();
-                android.app.FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                todaysSummary submit = new todaysSummary();
-                fragmentTransaction.replace(R.id.frame2, submit);
-                fragmentTransaction.commit();
-
-// Intent i = new Intent(HomeChallan.this,todaysSummary.class);
-//                startActivity(i);
+                todaysSummary fragment = new todaysSummary();
+                android.support.v4.app.FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                transaction.replace(R.id.frame2, fragment);
+                transaction.commit();
 
             }
         });
@@ -98,7 +87,10 @@ public class HomeChallan extends AppCompatActivity
             @Override
             public void onClick(View v) {
 
-
+                paymentVerification fragment = new paymentVerification();
+                android.support.v4.app.FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                transaction.replace(R.id.frame2, fragment);
+                transaction.commit();
             }
         });
 
@@ -107,6 +99,10 @@ public class HomeChallan extends AppCompatActivity
             @Override
             public void onClick(View v) {
 
+                welcomeToEchallan fragment = new welcomeToEchallan();
+                android.support.v4.app.FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                transaction.replace(R.id.frame2, fragment);
+                transaction.commit();
             }
         });
 
@@ -116,7 +112,7 @@ public class HomeChallan extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-    }
+            }
 
     @Override
     public void onBackPressed() {
@@ -162,27 +158,38 @@ public class HomeChallan extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.generatechallan) {
-            // Handle the camera action
+            Violatorinformation fragment = new Violatorinformation();
+            android.support.v4.app.FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+            transaction.replace(R.id.frame2, fragment);
+            transaction.commit();
         } else if (id == R.id.violatorhistory) {
 
         } else if (id == R.id.todaysummary) {
 
+            todaysSummary fragment = new todaysSummary();
+            android.support.v4.app.FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+            transaction.replace(R.id.frame2, fragment);
+            transaction.commit();
         } else if (id == R.id.doc_handover) {
-
+            welcomeToEchallan fragment = new welcomeToEchallan();
+            android.support.v4.app.FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+            transaction.replace(R.id.frame2, fragment);
+            transaction.commit();
         } else if (id == R.id.pay) {
+            paymentVerification fragment = new paymentVerification();
+            android.support.v4.app.FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+            transaction.replace(R.id.frame2, fragment);
+            transaction.commit();
 
         } else if (id == R.id.nav_changepassw) {
+
         } else if (id == R.id.nav_logout) {
 
         }
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.END);
         return true;
-
     }
-
-
     //Dailogue Box BeFORE lOGIN
     public void showDailogue() {
         final Dialog dialog = new Dialog(context);
@@ -202,10 +209,8 @@ public class HomeChallan extends AppCompatActivity
                     DataHandler.updatePreferences(AppConstants.SELECTED_ZONE,selectedZone);
                     dialog.dismiss();
                 }
-
             }
         });
-
         dialog.show();
         //Spinner here
         spinnerZone = (Spinner) update_layout.findViewById(R.id.spinner1);
@@ -218,12 +223,8 @@ public class HomeChallan extends AppCompatActivity
         professionAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         dialog.setContentView(update_layout);
         spinnerZone.setAdapter(professionAdapter);
-
         spinnerZone.setOnItemSelectedListener(this);
-
     }
-
-
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         TextView tv = (TextView) view;
@@ -236,7 +237,6 @@ public class HomeChallan extends AppCompatActivity
         } catch (NullPointerException e) {
             e.printStackTrace();
         }
-
         try {
             if (position > 0) {
                 switch (parent.getId()) {
@@ -248,7 +248,6 @@ public class HomeChallan extends AppCompatActivity
         } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
 
     @Override
@@ -256,13 +255,10 @@ public class HomeChallan extends AppCompatActivity
 
     }
 
-
     //Todo Check Form Fields
     public boolean checkFields() {
         boolean cancel = false;
         View focusView = null;
-
-
 
         try {
             if (TextUtils.isEmpty(selectedZone)) {
@@ -272,7 +268,6 @@ public class HomeChallan extends AppCompatActivity
                 focusView = spinnerZone;
                 cancel = true;
             }
-
             if (cancel) {
 
                 focusView.requestFocus();

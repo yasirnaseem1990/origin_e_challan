@@ -36,7 +36,7 @@
                app:layout_constraintHorizontal_bias="0.5"
                app:layout_constraintStart_toStartOf="parent"
                app:layout_constraintTop_toTopOf="parent"
-               app:srcCompat="@drawable/generatechallan" />
+               app:srcCompat="@drawable/generate_challan" />
 
 
            <ImageView
@@ -50,7 +50,7 @@
                app:layout_constraintHorizontal_bias="0.5"
                app:layout_constraintStart_toEndOf="@+id/imageView4"
                app:layout_constraintTop_toTopOf="@+id/imageView4"
-               app:srcCompat="@drawable/voilatorhistory" />
+               app:srcCompat="@drawable/violator_history" />
 
            <ImageView
                android:id="@+id/imageView6"
@@ -61,7 +61,7 @@
                app:layout_constraintHorizontal_bias="0.5"
                app:layout_constraintStart_toStartOf="parent"
                app:layout_constraintTop_toBottomOf="@+id/imageView4"
-               app:srcCompat="@drawable/todaysummary" />
+               app:srcCompat="@drawable/today_summary" />
 
            <ImageView
                android:id="@+id/imageView7"
@@ -73,7 +73,7 @@
                app:layout_constraintHorizontal_bias="0.5"
                app:layout_constraintStart_toEndOf="@+id/imageView6"
                app:layout_constraintTop_toTopOf="@+id/imageView6"
-               app:srcCompat="@drawable/paymentver" />
+               app:srcCompat="@drawable/payment_verification" />
 
            <ImageView
                android:id="@+id/imageView8"
@@ -86,7 +86,7 @@
                app:layout_constraintRight_toRightOf="parent"
                app:layout_constraintStart_toStartOf="parent"
                app:layout_constraintTop_toBottomOf="@+id/imageView6"
-               app:srcCompat="@drawable/dochandover" />
+               app:srcCompat="@drawable/doc_handover" />
        </android.support.constraint.ConstraintLayout>
 
 

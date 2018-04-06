@@ -72,9 +72,6 @@ public class EchallanLogin extends AppCompatActivity {
     }
 });
     }
-
-
-
     private void Login() {
         try{
             if(isNetworkAvailable()){

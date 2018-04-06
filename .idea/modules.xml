@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://C:\Users\Hassan Malik\Documents\GitHub\origin_e_challan\app\app.iml" filepath="C:\Users\Hassan Malik\Documents\GitHub\origin_e_challan\app\app.iml" />
       <module fileurl="file://C:\Users\Hassan Malik\Documents\GitHub\origin_e_challan\e-challan-e-challan.iml" filepath="C:\Users\Hassan Malik\Documents\GitHub\origin_e_challan\e-challan-e-challan.iml" />
       <module fileurl="file://$PROJECT_DIR$/origin_e_challan.iml" filepath="$PROJECT_DIR$/origin_e_challan.iml" />
     </modules>

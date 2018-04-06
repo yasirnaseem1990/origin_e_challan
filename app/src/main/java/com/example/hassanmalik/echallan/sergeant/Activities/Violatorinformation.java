@@ -1,8 +1,9 @@
 package com.example.hassanmalik.echallan.sergeant.Activities;
 
+
 import android.content.Context;
-import android.support.v4.app.Fragment;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
@@ -12,16 +13,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.example.hassanmalik.echallan.R;
 
 public class Violatorinformation extends Fragment implements AdapterView.OnItemSelectedListener{
-    Button btnNextVehicleInfo;
+    ImageView btnNextVehicleInfo;
     private View view;
     EditText et_violatorcnicNo,et_violatorName,et_violatormobileNo;
     Spinner spinnerCitizen;
@@ -46,12 +46,13 @@ public class Violatorinformation extends Fragment implements AdapterView.OnItemS
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
          view = inflater.inflate(R.layout.activity_generate_challan, container, false);
-        et_violatorcnicNo = (EditText) view.findViewById(R.id.editText4);
-        et_violatorName = (EditText) view.findViewById(R.id.editText5);
-        et_violatormobileNo = (EditText) view.findViewById(R.id.editText3);
-        btnNextVehicleInfo = (Button) view.findViewById(R.id.button2);
-        spinnerCitizen = (Spinner) view.findViewById(R.id.spinner);
-        btnNextVehicleInfo.setOnClickListener(new View.OnClickListener() {
+        et_violatorcnicNo = (EditText) view.findViewById(R.id.edittextCnic);
+        et_violatorName = (EditText) view.findViewById(R.id.edittxtName);
+        et_violatormobileNo = (EditText) view.findViewById(R.id.modileNo);
+        btnNextVehicleInfo = (ImageView) view.findViewById(R.id.btnNext);
+        spinnerCitizen = (Spinner) view.findViewById(R.id.spinnercitizentype);
+        btnNextVehicleInfo.setOnClickListener(
+                new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {

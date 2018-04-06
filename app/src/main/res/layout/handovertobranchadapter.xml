@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="match_parent">
 
     <CheckBox
         android:id="@+id/checkb"
@@ -24,12 +24,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:layout_marginTop="8dp"
-        android:text="SelectAll"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="10dp"
+        android:text="Select All"
         android:textColor="@color/colorPrimary"
-        app:layout_constraintStart_toStartOf="@+id/textView43"
+        app:layout_constraintBottom_toBottomOf="@+id/checkb"
+        app:layout_constraintStart_toEndOf="@+id/checkb"
         app:layout_constraintTop_toTopOf="@+id/checkb"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="1.0" />
+
 
     <CheckBox
         android:id="@+id/checkBox"
@@ -45,7 +48,7 @@
         android:id="@+id/textView42"
         android:layout_width="wrap_content"
         android:layout_height="19dp"
-        android:layout_marginStart="52dp"
+        android:layout_marginStart="44dp"
         android:text="@string/eTicket"
         android:textColor="@color/Sumarycolor"
         app:layout_constraintBottom_toTopOf="@+id/textView45"
@@ -99,9 +102,9 @@
         android:layout_marginStart="72dp"
         android:layout_marginTop="8dp"
         android:text="TextView"
+        android:textColor="@color/Sumarycolor"
         app:layout_constraintBottom_toBottomOf="@+id/textView43"
         app:layout_constraintStart_toEndOf="@+id/textView43"
-        android:textColor="@color/Sumarycolor"
 
         app:layout_constraintTop_toTopOf="@+id/textView43"
         app:layout_constraintVertical_bias="0.875" />
@@ -112,9 +115,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:textColor="@color/Sumarycolor"
-
         android:text="TextView"
+
+        android:textColor="@color/Sumarycolor"
         app:layout_constraintBottom_toTopOf="@+id/textView45"
         app:layout_constraintStart_toStartOf="@+id/textView57"
         app:layout_constraintTop_toBottomOf="@+id/textView43"
